@@ -30,7 +30,7 @@ public class RoomServiceImpl implements RoomService {
 
             cities.add(city);
             List<Residence> residences = new ArrayList<>();
-            Residence residence = new Residence.Builder("Plein")
+            Residence residence = new Residence.Builder("Plein Res")
                     .town("Cape Town")
                     .city(cities)
                     .id("1").build();
@@ -56,8 +56,12 @@ public class RoomServiceImpl implements RoomService {
             Room room2 = new Room.Builder("Double")
                     .residence(residences2)
                     .id("2").build();
+
+            roomMap.put(room.getId(), room);
+            roomMap.put(room2.getId(), room2);
         }
     }
+
     @Override
     public Room find(String s) {
         return roomMap.get(s);

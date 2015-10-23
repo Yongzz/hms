@@ -68,6 +68,14 @@ public class Residence implements Serializable, Comparable<Residence> {
             return this;
         }
 
+        public Builder copy(Residence residence){
+            this.id = residence.id;
+            this.name = residence.name;
+            this.town = residence.town;
+            this.city = residence.city;
+            return this;
+        }
+
         public Residence build() {
             return new Residence(this);
         }

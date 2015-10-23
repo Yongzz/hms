@@ -24,7 +24,7 @@ public class City implements Serializable, Comparable<City>{
 
     public String getCode(){ return code;}
 
-    public String name(){ return name;}
+    public String getName(){ return name;}
 
     @Override
     public int compareTo(City city){return id.compareTo(city.id);}

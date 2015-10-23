@@ -27,7 +27,7 @@ public class ResidenceServiceImpl implements ResidenceService{
                     .id("1").build();
 
             cities.add(city);
-            Residence residence = new Residence.Builder("Plein")
+            Residence residence = new Residence.Builder("Plein Res")
                     .town("Cape Town")
                     .city(cities)
                     .id("1").build();
@@ -53,6 +53,10 @@ public class ResidenceServiceImpl implements ResidenceService{
                     .town("Port Elizabeth")
                     .city(cities3)
                     .id("3").build();
+
+            residenceMap.put(residence.getId(), residence);
+            residenceMap.put(residence2.getId(), residence2);
+            residenceMap.put(residence3.getId(), residence3);
         }
     }
     @Override
