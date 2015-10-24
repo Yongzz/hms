@@ -23,9 +23,9 @@ public class Assign implements Serializable, Comparable<Assign>{
 
     public String getId(){ return id;}
 
-    public String getStudentNumberNumber(){ return roomNumber;}
+    public String getRoomNumber(){ return roomNumber;}
 
-    public String getName(){ return studentNumber;}
+    public String getStudentNumber(){ return studentNumber;}
 
     @Override
     public int compareTo(Assign assign){return id.compareTo(assign.id);}
