@@ -5,7 +5,7 @@ package za.ac.cput.hms.restapi;
  */
 public class UrlPath {
 
-    public static final String URL = "http://127.0.0.1:8080";
+    public static final String URL = "http://localhost:8080";
 
     public static class CityLinks{
         public static final String POST = URL + "/api/city/create";
